@@ -4,7 +4,7 @@
 workspace "ci-cd-ios-test.xcodeproj/project.xcworkspace"
 scheme "ci-cd-ios-test"
 sdk "iphonesimulator"
-device "iPhone 11"
+device "iPhone 14"
 code_coverage true
 xcargs '-parallelizeTargets'
 prelaunch_simulator true
