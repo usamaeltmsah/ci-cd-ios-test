@@ -1,11 +1,11 @@
 workflows:
-    Test-workflow:
+  Test-workflow:
     name: Test CI Pipeline
     scripts:
-        - name: CICD Started
-          script: echo "Welcome to your CICD set up"
-        - name: Build Spotify
-          script: xcode-project build-ipa --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" --scheme "$XCODE_SCHEME"
+      - name: CICD Started
+        script: echo "Welcome to your CICD set up"
+      - name: Build Spotify
+        script: xcode-project build-ipa --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" --scheme "$XCODE_SCHEME"
     publishing:
         email:
             recipients:
