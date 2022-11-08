@@ -4,8 +4,8 @@ workflows:
     scripts:
       - name: CICD Started
         script: echo "Welcome to your CICD set up"
-      - name: Build Spotify
-        script: xcode-project build-ipa --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" --scheme "$XCODE_SCHEME"
+      - name: Build CICD project
+        script: xcodebuild build -workspace "ci-cd-ios-test.xcodeproj" -scheme "ci-cd-ios-test" CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED-NO
     publishing:
         email:
             recipients:
