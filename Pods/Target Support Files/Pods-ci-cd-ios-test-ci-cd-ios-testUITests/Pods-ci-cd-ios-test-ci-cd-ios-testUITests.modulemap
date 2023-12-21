@@ -1,0 +1,6 @@
+framework module Pods_ci_cd_ios_test_ci_cd_ios_testUITests {
+  umbrella header "Pods-ci-cd-ios-test-ci-cd-ios-testUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
