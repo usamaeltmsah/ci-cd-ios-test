@@ -5,7 +5,10 @@ workflows:
       - name: CICD Started
         script: echo "Welcome to your CICD set up"
       - name: Build CICD project
-        script: xcodebuild xcode-project run-tests --workspace ci-cd-ios-test.xcworkspace --scheme ci-cd-ios-test --device "iPhone 11"
+        script: |
+            xcode-project run-tests \
+            --workspace ci-cd-ios-test.xcworkspace \
+            --scheme ci-cd-ios-test
         test_report: build/ios/test/*.xml
     publishing:
         email:
